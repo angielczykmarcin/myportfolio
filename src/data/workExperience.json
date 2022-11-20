@@ -1,0 +1,42 @@
+[
+    
+    {
+        "companyId": "emakina",
+        "companyName": "EMAKINA.PL",
+        "technologies": ["salesforce","js"],
+        "tools": ["vscode","confluence","jira"],
+        "time": "February 2021 - January 2022",
+        "description": "I've joined EMAKINA.PL as a Junior Salesforce Developer - I had a blast working with Salesforce as full time developer, in that time my Apex skills probably quadrupled :).",
+        "role": "Junior Salesforce Developer"
+    },
+    
+    {
+        "companyId": "gsk",
+        "companyName": "GlaxoSmithKline",
+        "technologies": ["salesforce","csharp"],
+        "tools": ["vscode","confluence","jira"],
+        "time": "May 2017 - February 2022",
+        "description": "In GlaxoSmithKline I've oficially started my career in IT, it's where I've first started to work with Salesforce while supporting our Veeva CRM (Salesforce add-on) users. It's also the place where I had a chance to develop micro-automations using C#.",
+        "role": "Tech Engineer"
+    },
+    {
+        "companyId": "centurylink",
+        "companyName": "CenturyLink",
+        "technologies": ["html","css"],
+        "tools": [""],
+        "time": "October 2016 - May 2017",
+        "description": "As a consultant in CenturyLink I didn't had much occasion to utilize or develop my technical skills in professional field, but night-shift work mode allowed me to start learning some HTML and CSS.",
+        "role": "IT Analyst"
+    
+    },
+    {
+        "companyId": "capgemini",
+        "companyName": "Capgemini",
+        "technologies": ["html","css","js","react","salesforce"],
+        "tools": ["vscode","bitbucket","azuredevops","confluence","jira","gitlab"],
+        "time": "January 2022 - Present",
+        "description": "Capgemini brought me to their ranks as a Software Engineer, my main task are still heavily connected with Salesforce world, but I did step out of it into vanilla JavaScript, CSS and HTML when one of the projects required me to be a lead Frontend Developer in Salesforce Experience Cloud. It is also the time when I got interested in React, which this page is written in.",
+        "role": "Software Engineer"
+    
+    }
+]

@@ -1,0 +1,31 @@
+.content-container{
+    color:white;
+    font-size: 32px;
+    height:100%;
+    display:grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+        "header header"
+        "main-content side-content";
+    margin:2rem 8rem;
+    max-width:100%;
+    overflow:hidden;
+}
+
+#dotsCanvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(2px);
+    z-index: -1;
+    transition: transform 1s ease-in-out;
+}
+
+@media (max-width:919px){
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 24px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+:root{
+  --float-from: 0px, 0px;
+  --float-to: -30px, 20px;
+}
+body{
+  overflow:hidden;
+}
+
+*{
+  font-family: 'Roboto';
+  margin:0;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  
+}
+
+h1{
+  font-size:72px;
+  font-weight:900;
+}
+
+h2{
+  font-size:36px;
+  font-weight:900;
+}
+
+h4{
+  font-size: 16px;
+}
+
+
+.app--container{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+}
+
+.experience-card__container{
+  display:flex;
+  justify-content: center;
+}
+
+.floating-circle{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:transparent;
+  border-radius:50%;
+  filter:blur(2px);
+  z-index:-1;
+}
+.color-switch{
+
+}
+
+@media (max-width: 1919px) {
+  h1{
+    font-size:32px;
+  }
+}
+
+@media (max-width: 1279px) {
+  h1{
+    font-size:28px;
+  }
+}
+
