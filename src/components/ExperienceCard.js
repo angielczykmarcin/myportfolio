@@ -21,13 +21,13 @@ const positionClassMap = {
 export default function ExperienceCard(props){
     return (    
         <div id={props.companyId} className={`experience-card__container ${props.initialPosition === 2 ? '': 'floating-circle minimized'} ${positionClassMap[props.initialPosition]}`}>
-            <div  className={`maincontentarea-description `}>
-                    <div className="maincontentarea__company-logo-container">
-                    <img className='maincontentarea-company-logo' src={companyLogos[props.companyId]} alt={`${props.companyId} logo`}/>
+            <div  className={`experiencecard__description`}>
+                    <div className="experiencecard__company-logo-container">
+                    <img className='experiencecard__company-logo' src={companyLogos[props.companyId]} alt={`${props.companyId} logo`}/>
                     </div>
-                    <h3 className='maincontentarea-company-duration'>{props.time}</h3>
-                    <h3 className='maincontentarea-company-role'>{props.role}</h3>
-                    <div className="maincontentarea__description-container">
+                    <h3 className='experiencecard__company-duration'>{props.time}</h3>
+                    <h3 className='experiencecard__company-role'>{props.role}</h3>
+                    <div className="experiencecard__description-container">
                         <p>
                         {props.description}
                         </p>
