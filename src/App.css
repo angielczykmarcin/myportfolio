@@ -1,70 +1,337 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
-:root{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+:root {
   --float-from: 0px, 0px;
   --float-to: -30px, 20px;
 }
-body{
-  overflow:hidden;
+* {
+  margin: 0;
 }
-
-*{
-  font-family: 'Roboto';
-  margin:0;
+body {
+  overflow: hidden;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(26, 12, 71, 1) 30%,
+    rgba(26, 12, 71, 1) 50%,
+    rgba(26, 12, 71, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-h1{
-  font-size:72px;
-  font-weight:900;
+h1 {
+  font-size: 72px;
+  font-weight: 900;
 }
 
-h2{
-  font-size:36px;
-  font-weight:900;
+h2 {
+  font-size: 36px;
+  font-weight: 900;
 }
 
-h4{
+h3 {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+h4 {
   font-size: 16px;
 }
 
-
-.app--container{
-  display:flex;
-  flex-direction: column;
-  height:100vh;
+ul {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
 }
 
-.experience-card__container{
-  display:flex;
+li {
+  position: relative;
+  height: 24px;
+  display: block;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+  list-style-type: none;
+  padding: 12px 0;
+  margin: 0 32px;
+}
+li::after {
+  content: "";
+  border-bottom: 1px solid white;
+  width: 0%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s;
+}
+
+li:hover {
+  filter: brightness(0.8);
+}
+li:hover:after {
+  width: 100%;
+}
+
+img {
+  max-height: 80px;
+  padding: 20px;
+}
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content__container {
+  color: white;
+  font-size: 32px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 66% 33%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "header header"
+    "main-content side-content";
+  margin: 2rem 8rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#content__dots-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+  z-index: -1;
+  transition: transform 1s ease-in-out;
+}
+
+.navbar__container {
+  margin: 0 48px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.maincontentarea__container {
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 600px;
+  grid-area: main-content;
+}
+
+.maincontentarea__floating-circle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.maincontentarea__experience-cards-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.sidebararea__container {
+  margin: 2rem;
+  position: relative;
+  color: ghostwhite;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  grid-area: side-content;
+}
+
+.sidebararea__technologies-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 300px;
+  grid-template-areas:
+    "header"
+    "icons";
+}
+
+.sidebararea__tools-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px;
+  grid-template-areas: "icons";
+}
+
+.sidebararea__technology-icon-container,
+.sidebararea__tools-icon-container {
+  display: grid;
+  place-items: center;
+}
+
+.sidebararea__tools-icons,
+.sidebararea__technologies-icons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  place-items: center;
+}
+
+.sidebararea__technologies-title {
+  grid-area: header;
+}
+
+.sidebararea__technologies-title-container,
+.sidebararea__tools-title-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.sidebararea__technologies-icons-container,
+.sidebararea__tools-icons-container {
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  display: flex;
   justify-content: center;
 }
 
-.floating-circle{
-  position:absolute;
-  width:8px;
-  height:8px;
-  background:transparent;
-  border-radius:50%;
-  filter:blur(2px);
-  z-index:-1;
-}
-.color-switch{
-
+.sidebararea__tools-icon-name {
+  text-align: center;
 }
 
-@media (max-width: 1919px) {
-  h1{
-    font-size:32px;
+.sidebararea__logo-fade-out {
+  animation: 1s fade forwards;
+  opacity: 0.2;
+  filter: grayscale(80%);
+}
+.sidebararea__logo-fade-in {
+  animation: 1s fade-in forwards;
+  opacity: 1;
+}
+
+.experience-card__container {
+  display: flex;
+  justify-content: center;
+  min-width: 640px;
+  max-width: 640px;
+}
+
+.experiencecard__company-duration {
+  background: linear-gradient(
+    90deg,
+    rgba(88, 173, 159, 1) 0%,
+    rgba(71, 206, 222, 1) 25%,
+    rgba(20, 141, 230, 1) 50%,
+    rgba(30, 118, 255, 1) 75%,
+    rgba(173, 13, 190, 1) 100%
+  );
+}
+
+.experiencecard__company-role {
+  background: black;
+}
+
+.experiencecard__description {
+  transition: scale 0.3s linear;
+}
+
+.experiencecard__company-logo {
+  align-self: center;
+  max-height: 140px;
+  max-width: 300px;
+  padding: 0;
+}
+
+.experiencecard__company-logo-container {
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  height: 250px;
+  place-items: center;
+}
+.experiencecard__description-container {
+  border-radius: 0 0 10px 10px;
+  font-size: 16px;
+  height: 300px;
+  line-height: 20px;
+  padding: 24px;
+  text-align: center;
+  word-break: normal;
+  color: white;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+/* to remove? */
+.minimized {
+  scale: 0;
+}
+
+.desc-l {
+  translate: -275px 0px;
+  opacity: 0.2;
+}
+.desc-r {
+  translate: 275px 0px;
+  opacity: 0.2;
+}
+.desc-b {
+  opacity: 0.2;
+}
+.desc-c {
+  position: absolute;
+}
+
+/* to remove? */
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 
-@media (max-width: 1279px) {
-  h1{
-    font-size:28px;
+@keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
-

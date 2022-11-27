@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './Content.css';
 import MainContentArea from './MainContentArea';
 import SidebarArea from './SidebarArea';
 
@@ -29,12 +28,12 @@ export default function Content(props){
     }
     
     useEffect(() => {
-        let dotsCanvas = document.querySelector("#dotsCanvas");
+        let dotsCanvas = document.querySelector("#content__dots-canvas");
         dotsCanvas.style.transform = `translate(-${props.activeTab * window.innerWidth}px, 0px)`;
     },[props.activeTab])
 
     useEffect(() => {
-        let dotsCanvas = document.querySelector("#dotsCanvas");
+        let dotsCanvas = document.querySelector("#content__dots-canvas");
             dotsCanvas.width = window.innerWidth * 3;
             dotsCanvas.height = window.innerHeight;
         if(dotsCanvas && canvasEmpty){
@@ -130,8 +129,8 @@ export default function Content(props){
         },[])
 
     return (
-        <div className="content-container">
-            <canvas  id="dotsCanvas"></canvas>
+        <div className="content__container">
+            <canvas  id="content__dots-canvas"></canvas>
             <MainContentArea setTechnologies={changeDisplayedTechnologies} setTools={changeDisplayedTools} activeTab={props.activeTab}/>
             <SidebarArea technologies={technologies} tools={tools}/>
         </div>

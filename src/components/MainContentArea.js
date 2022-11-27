@@ -1,5 +1,4 @@
 import React from 'react';
-import './MainContentArea.css';
 import ExperienceCard from './ExperienceCard';
 import workExperience from "../data/workExperience";
 
@@ -20,7 +19,7 @@ export default function MainContentArea(props){
         descriptionRight.classList.remove('desc-r');
         descriptionRight.classList.add('desc-b');
 
-        descriptionLeft.classList.remove('floating-circle');
+        descriptionLeft.classList.remove('maincontentarea__floating-circle');
         descriptionLeft.classList.remove('minimized');
         descriptionLeft.style.width = 'unset';
         descriptionLeft.style.height = 'unset';
@@ -30,7 +29,7 @@ export default function MainContentArea(props){
         descriptionLeft.style.transform = `translate(0px, 0px)`;
         descriptionLeft.childNodes[0].style.scale = '1';
 
-        descriptionCenter.classList.add('floating-circle');
+        descriptionCenter.classList.add('maincontentarea__floating-circle');
         descriptionCenter.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
         descriptionCenter.style.translate = `0px 0px`;
         descriptionCenter.style.transform = `translate(${getRandomPos('x')}px, ${getRandomPos('y')}px)`;
@@ -84,8 +83,8 @@ export default function MainContentArea(props){
     }) 
 
     return (    
-        <section className="maincontentarea--container">
-            <div className="maincontentarea-experience-description-container" onClick={pullCard}>
+        <section className="maincontentarea__container">
+            <div className="maincontentarea__experience-cards-container" onClick={pullCard}>
                 {cards}
             </div>
         </section>

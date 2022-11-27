@@ -1,5 +1,4 @@
 import { React } from 'react';
-import './Navbar.css';
 
 export default function Navbar(props){
 
@@ -9,7 +8,7 @@ export default function Navbar(props){
     }
 
     return (
-        <div className="navbar--container">
+        <div className="navbar__container">
             <ul>
                 <li value="0" onClick={switchTab}>Home</li>
                 <li value="1" onClick={switchTab}>Experience</li>

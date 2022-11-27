@@ -13,7 +13,7 @@ function App() {
   const [activeTab, setActiveTab] = useState(TABS.home);
   
   return (
-    <div className="app--container">
+    <div className="app__container">
       <Navbar setActiveTab={setActiveTab} />
       <Content activeTab={activeTab} />
       <Footer/>
