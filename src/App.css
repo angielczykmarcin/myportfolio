@@ -159,6 +159,10 @@ img {
   width: 100%;
 }
 
+.maincontentarea__container {
+  font-size: 48px;
+}
+
 .sidebararea__container {
   margin: 2rem;
   position: relative;
