@@ -12,10 +12,10 @@ const companyLogos = {
 }
 
 const positionClassMap = {
-    0: "desc-b",
-    1: "desc-l",
-    2: "desc-c",
-    3: "desc-r"
+    0: "experiencecard__position-back",
+    1: "experiencecard__position-left",
+    2: "experiencecard__position-front",
+    3: "experiencecard__position-right"
 }
 
 export default function ExperienceCard(props){
