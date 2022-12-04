@@ -185,6 +185,56 @@ img {
   font-size: 48px;
 }
 
+.maincontentcontact__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.maincontentcontact__input {
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.maincontentcontact__input::placeholder {
+  color: ghostwhite;
+  opacity: 1; /* Firefox */
+}
+
+.maincontentcontact__input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: ghostwhite;
+}
+
+.maincontentcontact__input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: ghostwhite;
+}
+
+.maincontentcontact__input-body {
+  min-height: 300px;
+}
+
+.maincontentcontact__button-submit {
+  padding: 15px;
+  background: #2892d7;
+  color: white;
+  border-radius: 15px;
+  font-size: 24px;
+  width: fit-content;
+  align-self: end;
+  display: inline-flex;
+}
+
+.maincontentcontact__label {
+  font-size: 16px;
+  color: ghostwhite;
+}
+
 .sidebararea__container {
   margin: 2rem;
   position: relative;
