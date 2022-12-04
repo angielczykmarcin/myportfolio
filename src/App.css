@@ -130,6 +130,28 @@ img {
   font-weight: 900;
 }
 
+.maincontenthome__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.maincontenthome__greetings {
+  font-size: 48px;
+}
+
+.maincontenthome__title {
+  font-size: 84px;
+}
+
+.maincontenthome__keyword-experience {
+  color: #2892d7;
+}
+
+.maincontenthome__keyword-contact {
+  color: #2892d7;
+}
+
 .maincontentarea__container {
   margin: 2rem;
   position: relative;
@@ -157,6 +179,10 @@ img {
   position: relative;
   text-align: center;
   width: 100%;
+}
+
+.maincontentarea__container {
+  font-size: 48px;
 }
 
 .sidebararea__container {
