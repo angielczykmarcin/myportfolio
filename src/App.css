@@ -136,6 +136,10 @@ img {
   gap: 25px;
 }
 
+.fade-in {
+  animation: fade-in 500ms forwards;
+}
+
 .maincontenthome__greetings {
   font-size: 48px;
 }

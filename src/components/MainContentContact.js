@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MainContentContact(){
     return (
-            <form className="maincontentcontact__form">
+            <form className="maincontentcontact__form fade-in">
 
                 <label className="maincontentcontact__label">Your name</label>
                 <input type="text" id="name" name="name" className="maincontentcontact__input" placeholder="Your name.."/>

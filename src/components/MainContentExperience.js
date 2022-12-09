@@ -82,7 +82,7 @@ export default function MainContentArea(props){
     }) 
 
     return (    
-            <div className="maincontentexperience__experience-cards-container" onClick={pullCard}>
+            <div className="maincontentexperience__experience-cards-container fade-in" onClick={pullCard}>
                 {cards}
             </div>
     )
