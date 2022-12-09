@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MainContentHome(){
     return (
-        <div className='maincontenthome__container'>
+        <div className='maincontenthome__container fade-in'>
             <span className='maincontenthome__title'>
                 Welcome to my page.
             </span>
