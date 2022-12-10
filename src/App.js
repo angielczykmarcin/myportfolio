@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 
 function App() {
   const TABS = {
-    home: "0",
-    experience: "1",
-    contact: "2"
+    home: 0,
+    experience: 1,
+    contact: 2
 }
   const [activeTab, setActiveTab] = useState(TABS.home);
   

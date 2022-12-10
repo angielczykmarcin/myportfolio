@@ -4,7 +4,7 @@ import MainContentHome from './MainContentHome';
 import MainContentContact from './MainContentContact';
 
 export default function MainContentArea(props){
-
+    
     return (
         <section className="maincontentarea__container">
         {props.activeTab === 0 && <MainContentHome/>}
