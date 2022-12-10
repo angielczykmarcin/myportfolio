@@ -5,12 +5,13 @@
 }
 * {
   margin: 0;
+  outline: white;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   -moz-user-select: none;
-  -khtml-user-select: none;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -79,6 +80,7 @@ li::after {
 }
 
 li:hover {
+  -webkit-filter: brightness(0.8);
   filter: brightness(0.8);
 }
 li:hover:after {
@@ -93,7 +95,7 @@ img {
 .app__container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 98vh;
 }
 
 .content__container {
@@ -112,9 +114,11 @@ img {
 }
 
 #content__dots-canvas {
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
+  -webkit-filter: blur(2px);
   filter: blur(2px);
   z-index: -1;
   transition: transform 1s ease-in-out;
@@ -137,6 +141,7 @@ img {
 }
 
 .fade-in {
+  -webkit-animation: fade-in 500ms forwards;
   animation: fade-in 500ms forwards;
 }
 
@@ -173,6 +178,7 @@ img {
   height: 8px;
   background: transparent;
   border-radius: 50%;
+  -webkit-filter: blur(2px);
   filter: blur(2px);
   z-index: -1;
 }
@@ -204,6 +210,26 @@ img {
   padding: 15px;
 }
 
+.maincontentcontact__input::-webkit-input-placeholder {
+  color: ghostwhite;
+  opacity: 1; /* Firefox */
+}
+
+.maincontentcontact__input::-moz-placeholder {
+  color: ghostwhite;
+  opacity: 1; /* Firefox */
+}
+
+.maincontentcontact__input:-ms-input-placeholder {
+  color: ghostwhite;
+  opacity: 1; /* Firefox */
+}
+
+.maincontentcontact__input::-ms-input-placeholder {
+  color: ghostwhite;
+  opacity: 1; /* Firefox */
+}
+
 .maincontentcontact__input::placeholder {
   color: ghostwhite;
   opacity: 1; /* Firefox */
@@ -229,6 +255,8 @@ img {
   color: white;
   border-radius: 15px;
   font-size: 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: end;
   display: inline-flex;
@@ -315,11 +343,14 @@ img {
 }
 
 .sidebarexperience__logo-fade-out {
+  -webkit-animation: 1s fade forwards;
   animation: 1s fade forwards;
   opacity: 0.2;
+  -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
 }
 .sidebarexperience__logo-fade-in {
+  -webkit-animation: 1s fade-in forwards;
   animation: 1s fade-in forwards;
   opacity: 1;
 }
@@ -398,6 +429,15 @@ img {
 
 /* to remove? */
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 1;
@@ -407,11 +447,119 @@ img {
   }
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0.2;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  li {
+    margin: 0 12px;
+  }
+
+  .content__container {
+    grid-template-rows: 10% 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main-content"
+      "side-content";
+  }
+  .navbar__container {
+    font-size: 24px;
+  }
+
+  .maincontentarea__container {
+    margin: 0px;
+  }
+  .maincontenthome__title {
+    font-size: 32px;
+  }
+  .maincontenthome__greetings {
+    font-size: 24px;
+  }
+  .sidebararea__container {
+    margin: 0;
+  }
+  .content__container {
+    margin: 0px 12px;
+  }
+  .experience-card__container {
+    min-width: 510px;
+    max-width: 510px;
+  }
+  .sidebararea__container {
+    display: none;
+  }
+  .maincontentcontact__input-body {
+    min-height: 300px;
+  }
+  .maincontentcontact__button-submit {
+    font-size: 24px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  li {
+    margin: 0 12px;
+  }
+
+  .content__container {
+    grid-template-rows: 10% 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main-content"
+      "side-content";
+  }
+  .navbar__container {
+    font-size: 16px;
+  }
+
+  .maincontentarea__container {
+    margin: 0px;
+  }
+  .maincontenthome__title {
+    font-size: 24px;
+  }
+  .maincontenthome__greetings {
+    font-size: 16px;
+  }
+  .sidebararea__container {
+    margin: 0;
+  }
+  .content__container {
+    margin: 0px 12px;
+  }
+  .experience-card__container {
+    min-width: 310px;
+    max-width: 310px;
+  }
+  .sidebararea__container {
+    display: none;
+  }
+  .maincontentcontact__input-body {
+    min-height: 200px;
+  }
+  .maincontentcontact__button-submit {
+    font-size: 16px;
+    border: none;
+  }
+  .experiencecard__company-logo-container {
+    height: 150px;
   }
 }
