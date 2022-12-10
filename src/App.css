@@ -5,9 +5,10 @@
 }
 * {
   margin: 0;
+  outline: white;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -93,7 +94,7 @@ img {
 .app__container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 98vh;
 }
 
 .content__container {
@@ -112,7 +113,8 @@ img {
 }
 
 #content__dots-canvas {
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
   filter: blur(2px);
@@ -413,5 +415,104 @@ img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  li {
+    margin: 0 12px;
+  }
+
+  .content__container {
+    grid-template-rows: 10% 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main-content"
+      "side-content";
+  }
+  .navbar__container {
+    font-size: 24px;
+  }
+
+  .maincontentarea__container {
+    margin: 0px;
+  }
+  .maincontenthome__title {
+    font-size: 32px;
+  }
+  .maincontenthome__greetings {
+    font-size: 24px;
+  }
+  .sidebararea__container {
+    margin: 0;
+  }
+  .content__container {
+    margin: 0px 12px;
+  }
+  .experience-card__container {
+    min-width: 510px;
+    max-width: 510px;
+  }
+  .sidebararea__container {
+    display: none;
+  }
+  .maincontentcontact__input-body {
+    min-height: 300px;
+  }
+  .maincontentcontact__button-submit {
+    font-size: 24px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  li {
+    margin: 0 12px;
+  }
+
+  .content__container {
+    grid-template-rows: 10% 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main-content"
+      "side-content";
+  }
+  .navbar__container {
+    font-size: 16px;
+  }
+
+  .maincontentarea__container {
+    margin: 0px;
+  }
+  .maincontenthome__title {
+    font-size: 24px;
+  }
+  .maincontenthome__greetings {
+    font-size: 16px;
+  }
+  .sidebararea__container {
+    margin: 0;
+  }
+  .content__container {
+    margin: 0px 12px;
+  }
+  .experience-card__container {
+    min-width: 310px;
+    max-width: 310px;
+  }
+  .sidebararea__container {
+    display: none;
+  }
+  .maincontentcontact__input-body {
+    min-height: 200px;
+  }
+  .maincontentcontact__button-submit {
+    font-size: 16px;
+    border: none;
+  }
+  .experiencecard__company-logo-container {
+    height: 150px;
   }
 }

@@ -11,22 +11,22 @@ export default function Background(props){
 
     function getRandomPos(axis){
         if(axis === 'x'){
-            return Math.random() * (window.innerWidth * 3);
+            return Math.random() * (window.screen.width * 0.9 * 3);
         }else if (axis ==='y'){
-            return Math.random() * window.innerHeight;
+            return Math.random() * window.screen.height * 0.9;
         }
     }
 
 
     useEffect(() => {
         let dotsCanvas = document.querySelector("#content__dots-canvas");
-        dotsCanvas.style.transform = `translate(-${props.activeTab * window.innerWidth}px, 0px)`;
+        dotsCanvas.style.transform = `translate(-${props.activeTab * window.screen.width}px, 0px)`;
     },[props.activeTab])
 
     useEffect(() => {
         let dotsCanvas = document.querySelector("#content__dots-canvas");
-            dotsCanvas.width = window.innerWidth * 3;
-            dotsCanvas.height = window.innerHeight;
+            dotsCanvas.width = window.screen.width * 0.9 * 3;
+            dotsCanvas.height = window.screen.height * 0.9;
         if(dotsCanvas && canvasEmpty){
             const ctx = dotsCanvas.getContext('2d');
         
@@ -114,8 +114,8 @@ export default function Background(props){
                 canvasEmpty = false;
             }
             window.addEventListener('resize', () => {
-                dotsCanvas.width = window.innerWidth * 3;
-                dotsCanvas.height = window.innerHeight;
+                dotsCanvas.width = window.screen.width * 0.9 * 3;
+                dotsCanvas.height = window.screen.height * 0.9;
             })
         },[])
 
