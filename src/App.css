@@ -195,6 +195,10 @@ img {
   font-size: 48px;
 }
 
+.maincontentcontact__toast {
+  font-size: 24px;
+}
+
 .maincontentcontact__form {
   display: flex;
   flex-direction: column;
