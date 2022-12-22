@@ -6,7 +6,7 @@ import Background from './Background';
 
 export default function Content(props){
     const [technologies, setTechnologies] = React.useState(['css','html']);
-    const [tools, setTools] = React.useState(['vscode']);
+    const [tools, setTools] = React.useState(['']);
 
     function changeDisplayedTechnologies(values){
         setTechnologies(values);
