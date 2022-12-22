@@ -401,9 +401,9 @@ img {
 }
 .experiencecard__description-container {
   border-radius: 0 0 10px 10px;
-  font-size: 16px;
+  font-size: 20px;
   height: 300px;
-  line-height: 20px;
+  line-height: 24px;
   padding: 24px;
   text-align: center;
   word-break: normal;
@@ -520,6 +520,10 @@ img {
 @media screen and (max-width: 767px) {
   li {
     margin: 0 12px;
+  }
+  .experiencecard__description-container {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .content__container {
