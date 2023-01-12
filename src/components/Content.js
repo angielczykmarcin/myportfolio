@@ -18,7 +18,7 @@ export default function Content(props){
     return (
         <div className="content__container">
             <Background activeTab={props.activeTab}/>
-            <MainContentArea setTechnologies={changeDisplayedTechnologies} setTools={changeDisplayedTools} activeTab={props.activeTab}/>
+            <MainContentArea setTechnologies={changeDisplayedTechnologies} setTools={changeDisplayedTools} setActiveTab={props.setActiveTab} activeTab={props.activeTab}/>
             <SidebarArea technologies={technologies} tools={tools} activeTab={props.activeTab}/>
         </div>
     )
