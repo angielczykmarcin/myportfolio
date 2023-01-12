@@ -197,9 +197,15 @@ img {
 
 .maincontentcontact__toast {
   font-size: 24px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .maincontentcontact__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -264,6 +270,20 @@ img {
   width: fit-content;
   align-self: end;
   display: inline-flex;
+}
+
+.maincontentcontact__button-submit-container {
+  align-self: end;
+  display: grid;
+  place-items: center;
+}
+
+.maincontentcontact__spinner {
+  color: white;
+  align-self: end;
+  position: absolute !important;
+  top: 50%;
+  right: 50%;
 }
 
 .maincontentcontact__label {
