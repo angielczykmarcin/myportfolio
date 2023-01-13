@@ -155,10 +155,12 @@ img {
 
 .maincontenthome__keyword-experience {
   color: #2892d7;
+  cursor: pointer;
 }
 
 .maincontenthome__keyword-contact {
   color: #2892d7;
+  cursor: pointer;
 }
 
 .maincontentarea__container {
