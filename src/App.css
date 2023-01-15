@@ -543,6 +543,9 @@ img {
   li {
     margin: 0 12px;
   }
+  .app__container {
+    height: 98svh;
+  }
   .experiencecard__description-container {
     font-size: 16px;
     line-height: 20px;
