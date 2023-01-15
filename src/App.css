@@ -151,7 +151,7 @@ img {
 }
 
 .maincontenthome__greetings {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 .maincontenthome__title {
@@ -517,6 +517,7 @@ img {
 @media screen and (max-width: 1023px) {
   li {
     margin: 0 12px;
+    font-size: 32px;
   }
 
   .content__container {
@@ -535,10 +536,10 @@ img {
     margin: 0px;
   }
   .maincontenthome__title {
-    font-size: 32px;
+    font-size: 76px;
   }
   .maincontenthome__greetings {
-    font-size: 24px;
+    font-size: 42px;
   }
   .sidebararea__container {
     margin: 0;
@@ -565,6 +566,7 @@ img {
 @media screen and (max-width: 767px) {
   li {
     margin: 0 12px;
+    font-size: 24px;
   }
   .app__container {
     height: 98svh;
@@ -590,10 +592,10 @@ img {
     margin: 0px;
   }
   .maincontenthome__title {
-    font-size: 24px;
+    font-size: 38px;
   }
   .maincontenthome__greetings {
-    font-size: 16px;
+    font-size: 32px;
   }
   .sidebararea__container {
     margin: 0;
