@@ -145,6 +145,11 @@ img {
   animation: fade-in 500ms forwards;
 }
 
+.fade-out {
+  -webkit-animation: fade-out 500ms forwards;
+  animation: fade-out 500ms forwards;
+}
+
 .maincontenthome__greetings {
   font-size: 48px;
 }
@@ -488,6 +493,24 @@ img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

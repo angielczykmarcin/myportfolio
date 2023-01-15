@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function MainContentContact(){
+    const popupMessage = useRef(null);
     var Spinner = require('react-spinkit');
-    const [showToast, setShowToast] = React.useState(false);
-    const [submitDisabled, setSubmitDisabled] = React.useState(false);
-    const [errorMessage, setErrorMessage] = React.useState('');
+    const [showToast, setShowToast] = useState(false);
+    const [submitDisabled, setSubmitDisabled] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    const POPUP_MESSAGES = {
+        success: 'Message has been sent, thank you!',
+        failed: 'Message could not be sent, please try again.',
+        incompleteForm: 'Please fill all form fields before sending the message.'
+    }
     
+    useEffect(() => {
+      }, [popupMessage]);
+
     function handleFormSubmit(evt){
-            
        evt.preventDefault();
        const formName = document.getElementById('name').value;
        const formSubject = document.getElementById('subject').value;
@@ -26,17 +34,7 @@ export default function MainContentContact(){
             .then(response => {
                 if(response.status === 200){
                     clearFormData(formName, formSubject, formBody);
-                    setErrorMessage( () => {
-                        return 'Message has been sent, thank you!';
-                    })
-                    setShowToast(previousValue => {
-                        return !previousValue
-                    })
-                    setTimeout(() => {
-                        setShowToast(previousValue => {
-                            return !previousValue
-                        })
-                    }, 2000);
+                    invokePopupMessage('success');
                 }
                 setSubmitDisabled(previousValue => {
                     return !previousValue;
@@ -44,20 +42,29 @@ export default function MainContentContact(){
             })
         }
         else{
-            console.log('else');
-            setErrorMessage( () => {
-                return 'Please fill all form fields before sending the message.';
-            })
-            setShowToast(previousValue => {
-                return !previousValue
-            })
+            invokePopupMessage('incompleteForm');
+   }
+
+   function invokePopupMessage(type){
+        setErrorMessage( () => {
+            return POPUP_MESSAGES[`${type}`];
+        });
+        displayPopupMessage();
+    }
+
+    function displayPopupMessage(){
+        setShowToast(previousValue => {
+            return !previousValue
+        })
+        setTimeout(() => {
+            popupMessage.current.classList.add('fade-out');
             setTimeout(() => {
                 setShowToast(previousValue => {
                     return !previousValue
                 })
-            }, 2000);
-        }
-   }
+            }, 500);
+        }, 1500);
+    }
 
    function clearFormData(){
     const formName = document.getElementById('name');
@@ -67,10 +74,10 @@ export default function MainContentContact(){
     formSubject.value = '';
     formBody.value ='';
    }
-
+    }
     return (
             <form className="maincontentcontact__form fade-in">
-                {showToast && <div className="maincontentcontact__toast fade-in">{errorMessage}</div>}
+                {showToast && <div ref={popupMessage} className="maincontentcontact__toast fade-in">{errorMessage}</div>}
                 <label className="maincontentcontact__label">Your name</label>
                 <input type="text" id="name" name="name" className="maincontentcontact__input" placeholder="Your name.."/>
 
