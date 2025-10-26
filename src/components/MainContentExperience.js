@@ -51,6 +51,10 @@ export default function MainContentArea(props){
                 props.setTechnologies(['html','css']);
                 props.setTools([])
                 break;
+            case 'volvo':
+                props.setTechnologies(['html','css','js','salesforce']);
+                props.setTools(['vscode','azuredevops','git'])
+                break;
             default:
                 props.setTechnologies([]);
                 props.setTools([])
