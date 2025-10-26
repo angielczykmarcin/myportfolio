@@ -1,52 +1,49 @@
 [
-    
     {
-        "companyId": "emakina",
-        "companyName": "EMAKINA.PL",
-        "technologies": ["salesforce","js"],
-        "tools": ["vscode","confluence","jira"],
-        "time": "February 2021 - January 2022",
-        "description": "At EMAKINA.PL, I progressed from a Junior to a Regular Salesforce Developer, where I built integrations with external systems using GraphQL, maintained and enhanced the codebase, and worked on multiple projects to increase my versatility as a developer.",
-        "role": "Junior/Regular Salesforce Developer"
+        "companyId": "centurylink",
+        "companyName": "CenturyLink",
+        "technologies": ["html", "css"],
+        "tools": [""],
+        "time": "October 2016 - May 2017",
+        "description": "As an IT Analyst, I provided phone-based support to US-based customers experiencing issues with our cloud services. Working the night shift allowed me to actively pursue self-study in HTML and CSS during my downtime.",
+        "role": "IT Analyst"
     },
-    
+
     {
         "companyId": "gsk",
         "companyName": "GlaxoSmithKline",
-        "technologies": ["salesforce","csharp"],
-        "tools": ["vscode","confluence","jira"],
+        "technologies": ["salesforce", "csharp"],
+        "tools": ["vscode", "confluence", "jira"],
         "time": "May 2017 - February 2022",
         "description": "As a Tech Engineer at GSK, I supported a global team of internal Veeva CRM users and played a key role in the customization of Veeva Events module. I also built custom integrations using Apex and C# when out-of-the-box Veeva CRM/Salesforce solutions were insufficient for our needs.",
         "role": "Tech Engineer"
     },
     {
-        "companyId": "centurylink",
-        "companyName": "CenturyLink",
-        "technologies": ["html","css"],
-        "tools": [""],
-        "time": "October 2016 - May 2017",
-        "description": "As an IT Analyst, I provided phone-based support to US-based customers experiencing issues with our cloud services. Working the night shift allowed me to actively pursue self-study in HTML and CSS during my downtime.",
-        "role": "IT Analyst"
-    
+        "companyId": "emakina",
+        "companyName": "EMAKINA.PL",
+        "technologies": ["salesforce", "js"],
+        "tools": ["vscode", "confluence", "jira"],
+        "time": "February 2021 - January 2022",
+        "description": "At EMAKINA.PL, I progressed from a Junior to a Regular Salesforce Developer, where I built integrations with external systems using GraphQL, maintained and enhanced the codebase, and worked on multiple projects to increase my versatility as a developer.",
+        "role": "Junior/Regular Salesforce Developer"
     },
+
     {
         "companyId": "capgemini",
         "companyName": "Capgemini",
-        "technologies": ["html","css","js","react","salesforce"],
-        "tools": ["vscode","bitbucket","azuredevops","confluence","jira","gitlab"],
+        "technologies": ["html", "css", "js", "react", "salesforce"],
+        "tools": ["vscode", "bitbucket", "azuredevops", "confluence", "jira", "gitlab"],
         "time": "January 2022 - April 2023",
         "description": "As a software engineer working with Salesforce Core and Salesforce Experience Cloud, I was committed to writing clean, efficient code and encouraging best practices among my team. In addition to my technical responsibilities, I have taken the opportunity to learn React and have been providing guidance and tutelage to less experienced developers on my team.",
         "role": "Software Engineer"
-    
     },
-        {
+    {
         "companyId": "volvo",
         "companyName": "Volvo Group",
-        "technologies": ["html","css","js","salesforce"],
-        "tools": ["vscode","azuredevops","git"],
+        "technologies": ["html", "css", "js", "salesforce"],
+        "tools": ["vscode", "azuredevops", "git"],
         "time": "April 2023 - Present",
-        "description": "As a Senior Software Engineer with hands-on experience in Salesforce Core, Experience Cloud, and Copado, I take pride not only in writing clean, efficient code but also in mentoring junior developers and fostering a culture of technical excellence.",
-        "role": "Senior Software Engineer"
-    
+        "description": "As a Senior Software Engineer turned Chapter Lead, I bring hands-on experience in Salesforce Core, Experience Cloud, and Copado. I’m passionate about writing clean, efficient code, mentoring developers, and building a strong culture of technical excellence. In my current role, I lead a team of Software Engineers and work closely with Chapters across the globe to drive collaboration and knowledge sharing.",
+        "role": "Senior Software Engineer / Chapter Lead Salesforce EU"
     }
 ]
