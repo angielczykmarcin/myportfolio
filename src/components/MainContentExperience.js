@@ -1,13 +1,13 @@
 import React from 'react';
 import ExperienceCard from './ExperienceCard';
 import workExperience from "../data/workExperience";
+let activeCardIndex = 0;
 
 export default function MainContentArea(props){
-    let activeCardIndex = 0;
     function pullCard(event){
         activeCardIndex = (activeCardIndex + 1) % workExperience.length;
         let activeCard;
-        const experienceCards = document.querySelectorAll(".experiencecard__description");
+        const experienceCards = document.querySelectorAll(".experience-card__container ");
         experienceCards.forEach(((card, index) => {
             if(card.id === workExperience[activeCardIndex].companyId){
                 activeCard = card;
@@ -22,7 +22,6 @@ export default function MainContentArea(props){
             }
             else{
                 card.classList.add('maincontentexperience__floating-circle','minimized');
-                card.classList.add('maincontentexperience__floating-circle');
                 card.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
                 card.style.translate = `0px 0px`;
                 card.style.transform = `translate(${getRandomPos('x')}px, ${getRandomPos('y')}px)`;

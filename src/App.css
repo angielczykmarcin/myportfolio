@@ -443,6 +443,9 @@ img {
   scale: 0;
 }
 
+.pos-fixed {
+  position: fixed;
+}
 .experiencecard__position-left {
   translate: -275px 0px;
   opacity: 0.2;
