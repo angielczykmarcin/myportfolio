@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.af386aba.css",
+    "main.js": "/myportfolio/static/js/main.4c5af7c3.js",
+    "static/media/capgemini.png": "/myportfolio/static/media/capgemini.4947779315b5a83a7ab9.png",
+    "static/media/gsk.png": "/myportfolio/static/media/gsk.4b2f6138e883b73466db.png",
+    "static/media/csharp.png": "/myportfolio/static/media/csharp.be5104ef3b6f2f59e8ce.png",
+    "static/media/gitlab.png": "/myportfolio/static/media/gitlab.6b11ccadfd9c3d4a9fc8.png",
+    "static/media/react.png": "/myportfolio/static/media/react.8f49c2dbba4c4682cde2.png",
+    "static/media/vscode.png": "/myportfolio/static/media/vscode.d793c746fbc937f66e3d.png",
+    "static/media/emakina.png": "/myportfolio/static/media/emakina.9d61d2348d1932478df1.png",
+    "static/media/centurylink.png": "/myportfolio/static/media/centurylink.28dcc2ea8b0132ba801f.png",
+    "static/media/confluence.png": "/myportfolio/static/media/confluence.b889414f97702a954c65.png",
+    "index.html": "/myportfolio/index.html",
+    "main.af386aba.css.map": "/myportfolio/static/css/main.af386aba.css.map",
+    "main.4c5af7c3.js.map": "/myportfolio/static/js/main.4c5af7c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af386aba.css",
+    "static/js/main.4c5af7c3.js"
+  ]
+}
