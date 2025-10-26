@@ -3,38 +3,34 @@ import ExperienceCard from './ExperienceCard';
 import workExperience from "../data/workExperience";
 
 export default function MainContentArea(props){
+    let activeCardIndex = 0;
     function pullCard(event){
-        const descriptionBack = document.querySelector(".experiencecard__position-back");
-        const descriptionLeft = document.querySelector(".experiencecard__position-left");
-        const descriptionCenter = document.querySelector(".experiencecard__position-front");
-        const descriptionRight = document.querySelector(".experiencecard__position-right");
-
-        descriptionBack.classList.remove('experiencecard__position-back');
-        descriptionBack.classList.add('experiencecard__position-left');
-        descriptionLeft.classList.remove('experiencecard__position-left');
-        descriptionLeft.classList.add('experiencecard__position-front');
-        descriptionCenter.classList.remove('experiencecard__position-front');
-        descriptionCenter.classList.add('experiencecard__position-right');
-        descriptionRight.classList.remove('experiencecard__position-right');
-        descriptionRight.classList.add('experiencecard__position-back');
-
-        descriptionLeft.classList.remove('maincontentexperience__floating-circle');
-        descriptionLeft.classList.remove('minimized');
-        descriptionLeft.style.width = 'unset';
-        descriptionLeft.style.height = 'unset';
-        descriptionLeft.style.background = 'transparent';
-        descriptionLeft.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
-        descriptionLeft.style.translate = `0px 0px`;
-        descriptionLeft.style.transform = `translate(0px, 0px)`;
-        descriptionLeft.childNodes[0].style.scale = '1';
-
-        descriptionCenter.classList.add('maincontentexperience__floating-circle');
-        descriptionCenter.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
-        descriptionCenter.style.translate = `0px 0px`;
-        descriptionCenter.style.transform = `translate(${getRandomPos('x')}px, ${getRandomPos('y')}px)`;
-        descriptionCenter.childNodes[0].style.scale = '0.001';
-
-        switch (descriptionLeft.id) {
+        activeCardIndex = (activeCardIndex + 1) % workExperience.length;
+        let activeCard;
+        const experienceCards = document.querySelectorAll(".experiencecard__description");
+        experienceCards.forEach(((card, index) => {
+            if(card.id === workExperience[activeCardIndex].companyId){
+                activeCard = card;
+                card.classList.remove('maincontentexperience__floating-circle','minimized');
+                card.style.width = 'unset';
+                card.style.height = 'unset';
+                card.style.background = 'transparent';
+                card.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
+                card.style.translate = `0px 0px`;
+                card.style.transform = `translate(0px, 0px)`;
+                card.childNodes[0].style.scale = '1';
+            }
+            else{
+                card.classList.add('maincontentexperience__floating-circle','minimized');
+                card.classList.add('maincontentexperience__floating-circle');
+                card.style.transition = `scale 0.5s ease, translate 0.5s ease, transform 0.5s ease`;
+                card.style.translate = `0px 0px`;
+                card.style.transform = `translate(${getRandomPos('x')}px, ${getRandomPos('y')}px)`;
+                card.childNodes[0].style.scale = '0.001';
+            }
+        }));
+        
+        switch (activeCard.id) {
             case 'emakina':
                 props.setTechnologies(['salesforce']);
                 props.setTools(['jira','confluence','vscode'])
