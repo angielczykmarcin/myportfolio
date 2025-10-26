@@ -34,9 +34,19 @@
         "companyName": "Capgemini",
         "technologies": ["html","css","js","react","salesforce"],
         "tools": ["vscode","bitbucket","azuredevops","confluence","jira","gitlab"],
-        "time": "January 2022 - Present",
-        "description": "As a software engineer working with Salesforce Core and Salesforce Experience Cloud, I am committed to writing clean, efficient code and encouraging best practices among my team. In addition to my technical responsibilities, I have taken the opportunity to learn React and have been providing guidance and tutelage to less experienced developers on my team.",
+        "time": "January 2022 - April 2023",
+        "description": "As a software engineer working with Salesforce Core and Salesforce Experience Cloud, I was committed to writing clean, efficient code and encouraging best practices among my team. In addition to my technical responsibilities, I have taken the opportunity to learn React and have been providing guidance and tutelage to less experienced developers on my team.",
         "role": "Software Engineer"
+    
+    },
+        {
+        "companyId": "volvo",
+        "companyName": "Volvo Group",
+        "technologies": ["html","css","js","salesforce"],
+        "tools": ["vscode","azuredevops","git"],
+        "time": "April 2023 - Present",
+        "description": "As a Senior Software Engineer with hands-on experience in Salesforce Core, Experience Cloud, and Copado, I take pride not only in writing clean, efficient code but also in mentoring junior developers and fostering a culture of technical excellence.",
+        "role": "Senior Software Engineer"
     
     }
 ]
