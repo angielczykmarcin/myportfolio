@@ -6,6 +6,7 @@ import cSharpLogo from "../imgs/technologies/csharp.png"
 import jsLogo from "../imgs/technologies/js.png"
 import reactLogo from "../imgs/technologies/react.png"
 import salesforceLogo from "../imgs/technologies/salesforce.png"
+import gitLogo from "../imgs/technologies/git.png";
 
 import vscode from "../imgs/tools/vscode.png";
 import bitbucket from "../imgs/tools/bitbucket.png";
@@ -13,6 +14,9 @@ import azuredevops from "../imgs/tools/azuredevops.png";
 import confluence from "../imgs/tools/confluence.png";
 import jira from "../imgs/tools/jira.png";
 import gitlab from "../imgs/tools/gitlab.png";
+import copado from "../imgs/tools/copado.png";
+import github from "../imgs/tools/github.png";
+import node from "../imgs/tools/node.png";
 
 export const icons = [
     {
@@ -51,10 +55,16 @@ export const icons = [
         name: "Salesforce",
         path: salesforceLogo
     },
+        {
+        type: "technology",
+        id: "git",
+        name: "GIT",
+        path: gitLogo
+    },
     {
         type: "tool",
         id: "vscode",
-        name: "Visual Studio Code",
+        name: "VS Code",
         path: vscode
     },
     {
@@ -64,9 +74,9 @@ export const icons = [
         path: bitbucket
     },
     {
-        type: "tool",
+        type: "technology",
         id: "azuredevops",
-        name: "Azure DevOps",
+        name: "DevOps",
         path: azuredevops
     },
     {
@@ -86,5 +96,24 @@ export const icons = [
         id: "gitlab",
         name: "GitLab",
         path: gitlab
+    }
+    ,
+    {
+        type: "tool",
+        id: "copado",
+        name: "Copado",
+        path: copado
+    },
+    {
+        type: "tool",
+        id: "github",
+        name: "GitHub",
+        path: github
+    },
+    {
+        type: "tool",
+        id: "node",
+        name: "Node.js",
+        path: node
     }
 ]
