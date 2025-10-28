@@ -35,20 +35,20 @@ export default function MainContentArea(props){
                 props.setTools(['jira','confluence','vscode'])
                 break;
             case 'gsk':
-                props.setTechnologies(['salesforce','csharp']);
+                props.setTechnologies(['salesforce','csharp','git']);
                 props.setTools(['jira','confluence','vscode'])
                 break;
             case 'capgemini':
-                props.setTechnologies(['html','css','salesorce','js','react', 'salesforce']);
-                props.setTools(['jira','confluence','vscode','gitlab','azuredevops','bitbucket'])
+                props.setTechnologies(['html','css','salesorce','js','react', 'salesforce', 'azuredevops', 'git']);
+                props.setTools(['jira','confluence','vscode','gitlab','bitbucket'])
                 break;
             case 'centurylink':
                 props.setTechnologies(['html','css']);
                 props.setTools([])
                 break;
             case 'volvo':
-                props.setTechnologies(['html','css','js','salesforce']);
-                props.setTools(['vscode','azuredevops','git'])
+                props.setTechnologies(['html','css','js','salesforce', 'git', 'azuredevops']);
+                props.setTools(['vscode','github', 'copado','node'])
                 break;
             default:
                 props.setTechnologies([]);

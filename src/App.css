@@ -34,8 +34,9 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 0.6446rem + 1.3378vw, 2.25rem);
   font-weight: 900;
+  white-space: nowrap;
 }
 
 h3 {
@@ -44,7 +45,8 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  white-space: nowrap;
+  font-size: clamp(0.5rem, 0.4649rem + 0.4459vw, 1rem);
 }
 
 ul {
@@ -88,8 +90,8 @@ li:hover:after {
 }
 
 img {
-  max-height: 80px;
-  padding: 20px;
+  max-height: 60px;
+  max-width: 60px;
 }
 
 .app__container {
@@ -108,7 +110,7 @@ img {
   grid-template-areas:
     "header header"
     "main-content side-content";
-  margin: 2rem 8rem;
+  margin: 2rem clamp(0.75rem, 12.932vw - 7.518rem, 8rem);
   max-width: 100%;
   overflow: hidden;
 }
@@ -125,7 +127,7 @@ img {
 }
 
 .navbar__container {
-  margin: 0 48px;
+  margin: clamp(0.125rem, 2.875vw - 0.45rem, 3rem);
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -151,7 +153,7 @@ img {
 }
 
 .maincontenthome__greetings {
-  font-size: 42px;
+  font-size: clamp(1.5rem, 1.275rem + 1.125vw, 2.625rem);;
 }
 
 .maincontenthome__title {
@@ -340,9 +342,11 @@ img {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%;
   place-items: center;
+  column-gap: 4px;
+  min-width: calc((4 * 60px) + (3 * 6px));
 }
 
 .sidebarexperience__technologies-title {
@@ -367,6 +371,11 @@ img {
   border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: center;
+}
+
+.sidebarexperience__tools-icon-image-container,
+.sidebarexperience__technology-icon-image-container{
+  height: 60px;
 }
 
 .sidebarexperience__tools-icon-name {

@@ -1,4 +1,3 @@
-import React from 'react';
 import {icons} from '../data/logos.js';
 
 
@@ -7,9 +6,11 @@ export default function SidebarExperience(props){
     const technologyIcons = icons.filter((el) => el.type === 'technology').map((item,index) => {
         return (
             <div key={item.id} className={`sidebarexperience__technology-icon-container ${props?.technologies?.find((el) => el === item.id) ? 'sidebarexperience__logo-fade-in' : 'sidebarexperience__logo-fade-out'}`}>
-            <img alt={`${item.name} logo`} 
-            src={item.path}
-            />
+            <div className={"sidebarexperience__technology-icon-image-container"}>
+                <img alt={`${item.name} logo`} 
+                src={item.path}
+                />
+            </div>
             <h4>{item.name}</h4>
             </div>
         )
@@ -18,9 +19,11 @@ export default function SidebarExperience(props){
     const toolIcons = icons.filter((el) => el.type === 'tool').map((item,index) => {
         return (
             <div key={item.id} className={`sidebarexperience__tools-icon-container ${props?.tools?.find((el) => el === item.id) ? 'sidebarexperience__logo-fade-in' : 'sidebarexperience__logo-fade-out'}`}>
-            <img alt={`${item.name} logo`} 
-            src={item.path}
-            />
+            <div className="sidebarexperience__tools-icon-image-container">
+                <img alt={`${item.name} logo`} 
+                src={item.path}
+                />
+            </div>
             <h4 className="sidebarexperience__tools-icon-name">{item.name}</h4>
             </div>
         )
