@@ -108,7 +108,6 @@ img {
   grid-template-columns: 66% 33%;
   grid-template-rows: 10% 90%;
   grid-template-areas:
-    "header header"
     "main-content side-content";
   margin: 2rem clamp(0.75rem, 12.932vw - 7.518rem, 8rem);
   max-width: 100%;
