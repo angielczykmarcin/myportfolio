@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.5aad7d4b.css",
-    "main.js": "/myportfolio/static/js/main.e306d187.js",
+    "main.css": "/myportfolio/static/css/main.a8596d40.css",
+    "main.js": "/myportfolio/static/js/main.b287c79e.js",
     "static/media/capgemini.png": "/myportfolio/static/media/capgemini.4947779315b5a83a7ab9.png",
     "static/media/gsk.png": "/myportfolio/static/media/gsk.4b2f6138e883b73466db.png",
+    "static/media/node.png": "/myportfolio/static/media/node.2c5cc316e5941d9ee70c.png",
     "static/media/csharp.png": "/myportfolio/static/media/csharp.be5104ef3b6f2f59e8ce.png",
     "static/media/gitlab.png": "/myportfolio/static/media/gitlab.6b11ccadfd9c3d4a9fc8.png",
     "static/media/react.png": "/myportfolio/static/media/react.8f49c2dbba4c4682cde2.png",
     "static/media/vscode.png": "/myportfolio/static/media/vscode.d793c746fbc937f66e3d.png",
     "static/media/emakina.png": "/myportfolio/static/media/emakina.9d61d2348d1932478df1.png",
+    "static/media/github.png": "/myportfolio/static/media/github.abfab864e65445fb8d1a.png",
     "static/media/centurylink.png": "/myportfolio/static/media/centurylink.28dcc2ea8b0132ba801f.png",
     "static/media/confluence.png": "/myportfolio/static/media/confluence.b889414f97702a954c65.png",
     "static/media/volvo.png": "/myportfolio/static/media/volvo.af196d2b2086b3872b43.png",
     "index.html": "/myportfolio/index.html",
-    "main.5aad7d4b.css.map": "/myportfolio/static/css/main.5aad7d4b.css.map",
-    "main.e306d187.js.map": "/myportfolio/static/js/main.e306d187.js.map"
+    "main.a8596d40.css.map": "/myportfolio/static/css/main.a8596d40.css.map",
+    "main.b287c79e.js.map": "/myportfolio/static/js/main.b287c79e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aad7d4b.css",
-    "static/js/main.e306d187.js"
+    "static/css/main.a8596d40.css",
+    "static/js/main.b287c79e.js"
   ]
 }
