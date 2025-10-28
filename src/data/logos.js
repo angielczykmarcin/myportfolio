@@ -62,13 +62,13 @@ export const icons = [
         path: gitLogo
     },
     {
-        type: "tool",
+        type: "technology",
         id: "vscode",
         name: "VS Code",
         path: vscode
     },
     {
-        type: "tool",
+        type: "technology",
         id: "bitbucket",
         name: "Bitbucket",
         path: bitbucket
@@ -80,38 +80,38 @@ export const icons = [
         path: azuredevops
     },
     {
-        type: "tool",
+        type: "technology",
         id: "confluence",
         name: "Confluence",
         path: confluence
     },
     {
-        type: "tool",
+        type: "technology",
         id: "jira",
         name: "Jira",
         path: jira
     },
     {
-        type: "tool",
+        type: "technology",
         id: "gitlab",
         name: "GitLab",
         path: gitlab
     }
     ,
     {
-        type: "tool",
+        type: "technology",
         id: "copado",
         name: "Copado",
         path: copado
     },
     {
-        type: "tool",
+        type: "technology",
         id: "github",
         name: "GitHub",
         path: github
     },
     {
-        type: "tool",
+        type: "technology",
         id: "node",
         name: "Node.js",
         path: node
