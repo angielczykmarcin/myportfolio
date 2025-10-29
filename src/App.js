@@ -2,7 +2,6 @@ import {React, useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Content from './components/Content';
-import Footer from './components/Footer';
 
 function App() {
   const TABS = {
@@ -16,7 +15,6 @@ function App() {
     <div className="app__container">
       <Navbar setActiveTab={setActiveTab} />
       <Content setActiveTab={setActiveTab} activeTab={activeTab} /> 
-      <Footer/>
     </div>
     );
 }

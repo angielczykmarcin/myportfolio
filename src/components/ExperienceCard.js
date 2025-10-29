@@ -15,7 +15,7 @@ const companyLogos = {
 
 export default function ExperienceCard(props){
     return (    
-        <div id={props.companyId} className={`experience-card__container ${props.initialPosition === 0 ? 'pos-fixed': 'floating-circle minimized'}`}>
+        <div id={props.companyId} className={`experience-card__container ${props.initialPosition === 0 ? '': 'floating-circle minimized maincontentexperience__floating-circle'}`}>
             <div  className={`experiencecard__description`}>
                     <div className="experiencecard__company-logo-container">
                     <img className='experiencecard__company-logo' src={companyLogos[props.companyId]} alt={`${props.companyId} logo`}/>

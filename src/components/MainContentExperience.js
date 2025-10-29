@@ -31,28 +31,22 @@ export default function MainContentArea(props){
         
         switch (activeCard.id) {
             case 'emakina':
-                props.setTechnologies(['salesforce']);
-                props.setTools(['jira','confluence','vscode'])
+                props.setTechnologies(['salesforce', 'jira','confluence','vscode']);
                 break;
             case 'gsk':
-                props.setTechnologies(['salesforce','csharp','git']);
-                props.setTools(['jira','confluence','vscode'])
+                props.setTechnologies(['salesforce','csharp','git', 'jira','confluence','vscode']);
                 break;
             case 'capgemini':
-                props.setTechnologies(['html','css','salesorce','js','react', 'salesforce', 'azuredevops', 'git']);
-                props.setTools(['jira','confluence','vscode','gitlab','bitbucket'])
+                props.setTechnologies(['html','css','salesorce','js','react', 'salesforce', 'azuredevops', 'git', 'jira','confluence','vscode','gitlab','bitbucket']);
                 break;
             case 'centurylink':
                 props.setTechnologies(['html','css']);
-                props.setTools([])
                 break;
             case 'volvo':
-                props.setTechnologies(['html','css','js','salesforce', 'git', 'azuredevops']);
-                props.setTools(['vscode','github', 'copado','node'])
+                props.setTechnologies(['html','css','js','salesforce', 'git', 'azuredevops', 'vscode','github', 'copado','node']);
                 break;
             default:
                 props.setTechnologies([]);
-                props.setTools([])
                 break;
         }
         
